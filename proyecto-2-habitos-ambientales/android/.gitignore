@@ -1,0 +1,48 @@
+# ── FIREBASE (nunca subir claves) ──────────────────────────
+google-services.json
+GoogleService-Info.plist
+
+# ── FLUTTER / DART ─────────────────────────────────────────
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.iml
+
+# ── ANDROID ────────────────────────────────────────────────
+**/android/**/gradle-wrapper.jar
+**/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+.cxx/
+
+# ── CLAVES Y SEGURIDAD ─────────────────────────────────────
+key.properties
+**/*.keystore
+**/*.jks
+
+# ── IDE ────────────────────────────────────────────────────
+.idea/
+*.iml
+.vscode/
+
+# ── iOS ────────────────────────────────────────────────────
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/.generated/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
