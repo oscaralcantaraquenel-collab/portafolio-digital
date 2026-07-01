@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="webook.Vistas.VistaEditarEquipos"
+             BackgroundColor="#F4E1D2">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15" Spacing="15">
+
+                <!-- Título -->
+                <Label Text="Editar Datos de Equipos"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="#5A3E2B"
+                       HorizontalOptions="Center"/>
+
+                <!-- ID mostrado -->
+                <Label x:Name="Mid"
+                       HorizontalOptions="Center"
+                       TextColor="#5A3E2B"
+                       FontAttributes="Bold"/>
+
+                <!-- Card -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="15"
+                       Padding="20"
+                       HasShadow="True">
+
+                    <StackLayout Spacing="10">
+
+                        <!-- Marca -->
+                        <Label Text="Marca" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="marca"
+                               Placeholder="Marca del equipo"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Modelo -->
+                        <Label Text="Modelo" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="modelo"
+                               Placeholder="Modelo del equipo"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Número de equipo -->
+                        <Label Text="Número de Equipo" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="numEquipo"
+                               Placeholder="Número del equipo"
+                               Keyboard="Numeric"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Estado -->
+                        <Label Text="Estado" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="estado"
+                               Placeholder="Estado del equipo"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Descripción -->
+                        <Label Text="Descripción" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="descripcion"
+                               Placeholder="Descripción del equipo"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Existencia -->
+                        <Label Text="Existencias" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="existencia"
+                               Placeholder="Cantidad disponible"
+                               Keyboard="Numeric"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <!-- Botones -->
+                <StackLayout Spacing="10">
+
+                    <Button x:Name="btnActualizarE"
+                            Text="Actualizar"
+                            BackgroundColor="#8B5E3C"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+
+                    <Button x:Name="btnEliminarE"
+                            Text="Eliminar"
+                            BackgroundColor="#A67C52"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+                </StackLayout>
+
+                <!-- Footer -->
+                <Label Text="© CODAL Innovations S.A. de C.V."
+                       FontSize="12"
+                       TextColor="Gray"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,10"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

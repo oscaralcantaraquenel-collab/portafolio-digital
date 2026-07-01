@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="webook.Vistas.Vista_Detalles_Espacios"
+             BackgroundColor="#F4E1D2">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15" Spacing="15">
+
+                <!-- Título -->
+                <Label Text="Datos del Espacio"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="#5A3E2B"
+                       HorizontalOptions="Center" />
+
+                <!-- Mensaje -->
+                <Label x:Name="lblMensaje"
+                       TextColor="Red"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+
+                <!-- Card -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="15"
+                       Padding="20"
+                       HasShadow="True">
+
+                    <StackLayout Spacing="10">
+
+                        <!-- Nombre -->
+                        <Label Text="Nombre" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="txtNombre"
+                               Placeholder="Nombre del espacio"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Estado -->
+                        <Label Text="Estado" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="txtEstado"
+                               Placeholder="Estado del espacio"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Descripción -->
+                        <Label Text="Descripción" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="txtDescripcion"
+                               Placeholder="Descripción"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Ubicación -->
+                        <Label Text="Ubicación" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="txtUbicacion"
+                               Placeholder="Ubicación"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Tipo -->
+                        <Label Text="Tipo" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="txtTipo"
+                               Placeholder="Tipo de espacio"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <!-- Botones -->
+                <StackLayout Spacing="10">
+
+                    <Button x:Name="btn_actualizar"
+                            Text="Actualizar"
+                            BackgroundColor="#8B5E3C"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+
+                    <Button x:Name="btn_eliminar"
+                            Text="Eliminar"
+                            BackgroundColor="#C94C4C"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+
+                </StackLayout>
+
+                <!-- Footer -->
+                <Label Text="© CODAL Innovations S.A. de C.V."
+                       FontSize="12"
+                       TextColor="Gray"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,10"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

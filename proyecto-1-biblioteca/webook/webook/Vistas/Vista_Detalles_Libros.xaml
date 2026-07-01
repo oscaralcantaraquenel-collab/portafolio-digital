@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="webook.Vistas.Vista_Detalles_Libros"
+             BackgroundColor="#F4E1D2">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15" Spacing="15">
+
+                <!-- Título -->
+                <Label Text="Actualizar Libro"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="#5A3E2B"
+                       HorizontalOptions="Center" />
+
+                <!-- Card -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="15"
+                       Padding="20"
+                       HasShadow="True">
+
+                    <StackLayout Spacing="10">
+
+                        <!-- ISBN -->
+                        <Label Text="ID del libro" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="isbn"
+                               Placeholder="ID del libro"
+                               Keyboard="Numeric"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Título -->
+                        <Label Text="Título" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="titulo"
+                               Placeholder="Nombre del libro"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Autor -->
+                        <Label Text="Autor" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="autor"
+                               Placeholder="Autor"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Editorial -->
+                        <Label Text="Editorial" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="editorial"
+                               Placeholder="Editorial"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Año -->
+                        <Label Text="Año de publicación" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="publicacion"
+                               Placeholder="Ej: 2024"
+                               Keyboard="Numeric"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Clasificación -->
+                        <Label Text="Clasificación" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="clasificacion"
+                               Placeholder="Clasificación"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Cantidad -->
+                        <Label Text="Cantidad" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="cantidad"
+                               Placeholder="Cantidad disponible"
+                               Keyboard="Numeric"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Estado -->
+                        <Label Text="Estado" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="estado"
+                               Placeholder="Estado del libro"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Ubicación -->
+                        <Label Text="Ubicación" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="ubicacion"
+                               Placeholder="Ubicación"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <!-- Botones -->
+                <StackLayout Spacing="10">
+
+                    <Button x:Name="Actualizar"
+                            Text="Actualizar"
+                            BackgroundColor="#8B5E3C"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+
+                    <Button x:Name="Eliminar"
+                            Text="Eliminar"
+                            BackgroundColor="#C94C4C"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+
+                </StackLayout>
+
+                <!-- Footer -->
+                <Label Text="© CODAL Innovations S.A. de C.V."
+                       FontSize="12"
+                       TextColor="Gray"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,10"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

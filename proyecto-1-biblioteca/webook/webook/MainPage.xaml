@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="webook.MainPage"
+             BackgroundColor="#F4E1D2">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15" Spacing="20">
+
+                <!-- Título principal -->
+                <Label Text="Webook"
+                       FontSize="40"
+                       FontAttributes="Bold"
+                       TextColor="#5A3E2B"
+                       HorizontalOptions="Center"/>
+
+                <!-- Bienvenida -->
+                <Label Text="Bienvenido"
+                       FontSize="18"
+                       TextColor="#5A3E2B"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="¿Qué te gustaría hacer hoy?"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#5A3E2B"
+                       HorizontalOptions="Center"/>
+
+                <!-- Card principal -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="15"
+                       Padding="15"
+                       HasShadow="True">
+
+                    <StackLayout Spacing="10">
+
+                        <Button x:Name="btnRegistrarP"
+                                Text="Registrar Persona 👤"
+                                BackgroundColor="#8B5E3C"
+                                TextColor="White"
+                                CornerRadius="10"
+                                HeightRequest="50"/>
+
+                        <Button x:Name="btnRegistrarEquip"
+                                Text="Registrar Equipo 💻"
+                                BackgroundColor="#A67C52"
+                                TextColor="White"
+                                CornerRadius="10"
+                                HeightRequest="50"/>
+
+                        <Button x:Name="btnRegistrarA"
+                                Text="Registrar Adeudo ⚠️"
+                                BackgroundColor="#8B5E3C"
+                                TextColor="White"
+                                CornerRadius="10"
+                                HeightRequest="50"/>
+
+                        <Button x:Name="btnRegistrarEsp"
+                                Text="Registrar Espacio 🏫"
+                                BackgroundColor="#A67C52"
+                                TextColor="White"
+                                CornerRadius="10"
+                                HeightRequest="50"/>
+
+                        <Button x:Name="btnRegistrarL"
+                                Text="Registrar Libro 📖"
+                                BackgroundColor="#8B5E3C"
+                                TextColor="White"
+                                CornerRadius="10"
+                                HeightRequest="50"/>
+
+                        <Button x:Name="btnRegistrarPr"
+                                Text="Registrar Préstamo 🤝"
+                                BackgroundColor="#A67C52"
+                                TextColor="White"
+                                CornerRadius="10"
+                                HeightRequest="50"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <!-- Footer -->
+                <Label Text="ⓘ Sobre Nosotros ⓘ"
+                       FontSize="14"
+                       TextColor="#5A3E2B"
+                       HorizontalTextAlignment="Center"
+                       TextDecorations="Underline"/>
+
+                <Label Text="© CODAL Innovations S.A. de C.V."
+                       FontSize="12"
+                       TextColor="Gray"
+                       HorizontalTextAlignment="Center"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

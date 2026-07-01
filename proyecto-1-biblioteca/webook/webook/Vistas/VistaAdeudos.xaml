@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="webook.Vistas.VistaAdeudos"
+             BackgroundColor="#F4E1D2">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15" Spacing="15">
+
+                <!-- Título -->
+                <Label Text="Registro de Adeudos"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="#5A3E2B"
+                       HorizontalOptions="Center"/>
+
+                <!-- Card -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="15"
+                       Padding="20"
+                       HasShadow="True">
+
+                    <StackLayout Spacing="10">
+
+                        <!-- ID -->
+                        <Label Text="ID Préstamo" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="id"
+                               Placeholder="Ingresa el id de préstamo"
+                               Keyboard="Numeric"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Adeudo -->
+                        <Label Text="Tipo de Adeudo" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="adeudo"
+                               Placeholder="Tipo de adeudo"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Sanción -->
+                        <Label Text="Sanción" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="sancion"
+                               Placeholder="Sanción"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Descripción -->
+                        <Label Text="Descripción" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="descripcion"
+                               Placeholder="Descripción del adeudo"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Fecha -->
+                        <Label Text="Fecha del Adeudo" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <DatePicker x:Name="fecha"
+                                    BackgroundColor="#F5F5F5"
+                                    TextColor="Black"/>
+
+                        <!-- Valor -->
+                        <Label Text="Valor" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="valor"
+                               Placeholder="Valor del adeudo"
+                               Keyboard="Numeric"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <!-- Botones -->
+                <StackLayout Spacing="10">
+
+                    <Button x:Name="btnRegistrarA"
+                            Text="Registrar"
+                            BackgroundColor="#8B5E3C"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+
+                    <Button x:Name="btnRestablecerA"
+                            Text="Restablecer"
+                            BackgroundColor="#D3B8A0"
+                            TextColor="Black"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+
+                    <Button x:Name="btnMostrarA"
+                            Text="Mostrar Adeudos"
+                            BackgroundColor="#A67C52"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+                </StackLayout>
+
+                <!-- Footer -->
+                <Label Text="© CODAL Innovations S.A. de C.V."
+                       FontSize="12"
+                       TextColor="Gray"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,10"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

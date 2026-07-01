@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="webook.Vistas.VistaEditarPrestamos"
+             BackgroundColor="#F4E1D2">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15" Spacing="15">
+
+                <!-- Título -->
+                <Label Text="Editar Datos de Préstamos"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="#5A3E2B"
+                       HorizontalOptions="Center"/>
+
+                <!-- ID mostrado -->
+                <Label x:Name="Mid"
+                       HorizontalOptions="Center"
+                       TextColor="#5A3E2B"
+                       FontAttributes="Bold"/>
+
+                <!-- Card -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="15"
+                       Padding="20"
+                       HasShadow="True">
+
+                    <StackLayout Spacing="10">
+
+                        <!-- ID Persona -->
+                        <Label Text="ID Persona" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="idPerson"
+                               Placeholder="ID de la persona"
+                               Keyboard="Numeric"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                        <!-- Fecha préstamo -->
+                        <Label Text="Fecha de Préstamo" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <DatePicker x:Name="fechaprest"
+                                    BackgroundColor="#F5F5F5"
+                                    TextColor="Black"/>
+
+                        <!-- Fecha devolución -->
+                        <Label Text="Fecha de Devolución" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <DatePicker x:Name="fechamaxregreso"
+                                    BackgroundColor="#F5F5F5"
+                                    TextColor="Black"/>
+
+                        <!-- Estado -->
+                        <Label Text="Estado del Préstamo" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Picker x:Name="estado"
+                                Title="Selecciona el estado"
+                                BackgroundColor="#F5F5F5"
+                                TextColor="Black">
+                                <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                        <x:String>Prestado</x:String>
+                                        <x:String>Devuelto</x:String>
+                                        <x:String>Para Adeudo</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                        </Picker>
+
+
+                        <!-- Tipo -->
+                        <Label Text="Tipo de Préstamo" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Picker x:Name="tipo"
+                                Title="Selecciona el tipo"
+                                BackgroundColor="#F5F5F5"
+                                TextColor="Black">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Libro</x:String>
+                                        <x:String>Espacio</x:String>
+                                        <x:String>Equipo</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                        </Picker>
+
+                        <!-- ID Recurso -->
+                        <Label Text="ID Recurso" FontAttributes="Bold" TextColor="#5A3E2B"/>
+                        <Entry x:Name="idrecurso"
+                               Placeholder="ID del recurso"
+                               Keyboard="Numeric"
+                               BackgroundColor="#F5F5F5"
+                               TextColor="Black"
+                               PlaceholderColor="Gray"
+                               HeightRequest="45"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <!-- Botones -->
+                <StackLayout Spacing="10">
+
+                    <Button x:Name="btnActualizarPre"
+                            Text="Actualizar"
+                            BackgroundColor="#8B5E3C"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+
+                    <Button x:Name="btnEliminarPre"
+                            Text="Eliminar"
+                            BackgroundColor="#A67C52"
+                            TextColor="White"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            FontSize="16"/>
+                </StackLayout>
+
+                <!-- Footer -->
+                <Label Text="© CODAL Innovations S.A. de C.V."
+                       FontSize="12"
+                       TextColor="Gray"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,10"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
